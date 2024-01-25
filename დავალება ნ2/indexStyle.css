@@ -1,0 +1,70 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+nav{}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navigation
+{
+margin-left: 30px;
+}
+
+#navigation a 
+{
+    font-size: 15px;
+}
+
+
+
+
+section
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+}
+
+section div
+{
+    width: 50%;
+    height: 500px;
+   
+}
+
+section div img
+{
+    width: 100%;
+    height: 100%;
+}
+
+section dt
+{
+    font-size: 20px;  
+    margin: 15px 0px;
+
+}
+
+#GPS
+{
+    display: flex;
+    justify-content: center;
+}

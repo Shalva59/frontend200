@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "openSans_bold";
+    src: url(./../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Playfair_Display_bold";
+    src: url(./../fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
+}
+
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-38 {
+    font-size: 38px;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+.font-64 {
+    font-size: 64px;
+}
+
+.font-86 {
+    font-size: 86px;
+}
+
+.font-96 {
+    font-size: 96px;
+}
+
+.font-276 {
+    font-size: 276px;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+.openSans_bold {
+    font-family: "openSans_bold";
+}
+
+.Playfair_Display_bold
+{
+    font-family: "Playfair_Display_bold";
+}

@@ -1,0 +1,213 @@
+.first_animation_box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /* animation-name: example; */
+    /* animation-name აქ ვწერთ ანიმაციის სახელს */
+    /* animation-duration: 5s; */
+    /* animation-duration აქ ვწერთ ანიმაციის პერიოდს დროს  */
+    /* animation-delay: 2s; */
+    /*  animation-delay ანიმაციას გარკვეულ დროით აჩერებს და მერე ამუშავებს  და ხოლო თუ უარყოფითსი ვწერთ მაშინ keyframes-ში რამდენიმე წამს გადაახტება*/
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    animation-timing-function:linear; */
+    animation: example 5s infinite linear;
+}
+
+.mt-200 {
+    margin-top: 220px;
+}
+
+@keyframes example {
+    /* from {background-color: red;}
+
+    to { background-color: yellow;} */
+
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.animation_block {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: red;
+    animation: myMove 5s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+/* Linear არის ერთი და იგივე სისწრაფე აქვს ანიმაციის დაწყებიდან ანიმაციის ბოლომდე */
+#div1 {
+    animation-timing-function: linear;
+}
+
+/* Ease არის default მდგომარეობა */
+#div2 {
+    animation-timing-function: ease;
+}
+
+/* Ease-in ანიმაცია რომელსაც ნელი დაწყება აქვს  */
+#div3 {
+    animation-timing-function: ease-in;
+}
+
+/* Ease-out ანიმაცია რომელსაც ნელი დასრულება აქვს  */
+#div4 {
+    animation-timing-function: ease-out;
+}
+
+/* Ease-in-out ანიმაცია რომელსაც ნელი დაწყება აქვს და ნელი დასრულება */
+#div5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myMove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 500px;
+    }
+}
+
+.static {
+    position: static;
+    border: 3px solid red;
+
+}
+
+.relative {
+    position: relative;
+    left: 30px;
+    top: 50px;
+    border: 3px solid rebeccapurple;
+}
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border: 3px solid gray;
+    background-color: white;
+}
+
+.Wrapper {
+    width: 500px;
+    height: 500px;
+    border: 3px solid green;
+    margin-top: 50px;
+    position: relative;
+    background-color: yellow;
+    z-index: 2;
+}
+
+.absolute {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sticky {
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+    background-color: green;
+    border: 3px solid darkgreen;
+    z-index: 2;
+}
+
+
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border: 30px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: Wheel;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+.line {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+}
+
+.line:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.line:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.line:nth-child(4) {
+    transform: rotate(90deg);
+}
+
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+
+@keyframes Wheel {
+    from {
+        transform: rotate(0deg);
+        left: -35vw;
+    }
+
+    to {
+        transform: rotate(360deg);
+        left: 120vw;
+    }
+}

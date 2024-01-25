@@ -1,0 +1,75 @@
+@import url(./fonts.css);
+@import url(./layout.css);
+@import url(./global.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    cursor: url("./../img/mouseSeconder.svg");
+}
+
+.line_spell {
+    line-height: 37px;
+}
+
+.falsa_container {
+    margin-left: 20px;
+}
+
+
+.falsa_img img {
+    width: 80%;
+
+}
+
+.brands_name {
+    margin-left: 60px;
+}
+
+
+.services {
+    font-size: 18vw;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-family: "neueExtraBold";
+    color: white;
+    opacity: 0.15;
+
+}
+
+.relative {
+    padding: 50px;
+    background-image: url(./../img/lineargradient.png);
+    height: 550px;
+    width: 950px;
+}
+
+.rating_container {
+    left: 530px;
+    height: 80%;
+
+}
+
+.come_on_baby_Container {
+    height: 600px;
+    width: 100%;
+}
+
+
+.text_Fire {
+    background: linear-gradient(90deg, rgba(154, 25, 131, 1) 12%, rgba(189, 21, 69, 1) 49%, rgba(227, 148, 17, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social
+{
+    align-items:center;
+    height: 50px;
+    background: #F3F3F5;
+
+}

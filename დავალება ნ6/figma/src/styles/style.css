@@ -1,0 +1,39 @@
+@import url("layout.css");
+@import url("global.css");
+@import url("responsive.css");
+@import url("fonts.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logIn {
+    padding: 16px 30px;
+    background-color: transparent;
+    border-color: #6C63FF;
+    color: #6C63FF;
+    border-radius: 2px;
+}
+
+.Get_started {
+    Padding: 16px 30px 16px 30px;
+    Gap: 10px;
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.fusely_text {
+    line-height: 90px;
+}
+
+.fusely_container {
+    padding-right: 180px;
+}
+
+.opacity_05 {
+    opacity: 0.5;
+}
