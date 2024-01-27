@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Open_sans_Regular";
+    src: url(./../styles/../../fonts/Open_Sans/static/OpenSans-Regular.ttf)
+}
+
+
+.Open_sans_Regular {
+    font-family: "Open_sans_Regular";
+}
+
+
+.font-size_50 {
+    font-size: 50px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+
+}
+
+.font-size-17
+{
+    font-size: 17px;
+}

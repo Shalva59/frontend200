@@ -1,0 +1,20 @@
+h1 {
+    font-family: "Playfair Display";
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -1px;
+}
+
+p {
+    color:  #9893A3;
+    font-feature-settings: 'clig'off, 'liga'off;
+    /* Body large */
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 170% */
+}
