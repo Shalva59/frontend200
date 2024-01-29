@@ -112,17 +112,17 @@
     background: rgba(236, 235, 255, 0.30);
 }
 
-
-.card:hover
-{
-    border-radius: 2px;
-    background: var(--primary-400, #6C63FF);
-    color:white
+.card:hover {
+    background-color: #007bff;
 }
 
-.card p :hover
-{
+.card:hover .Open_sans_Regular {
+    border-radius: 2px;
+
     color: white;
 }
 
-
+.card:hover .btn-secondary {
+    background-color: white;
+    color: #007bff;
+}
