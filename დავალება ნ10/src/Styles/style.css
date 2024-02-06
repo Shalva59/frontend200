@@ -1,0 +1,16 @@
+.row
+{
+    padding: 10%;
+    gap: 15px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+
+.justify-beetween
+{
+    justify-content: space-between;
+}
