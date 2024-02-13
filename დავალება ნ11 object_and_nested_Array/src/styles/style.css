@@ -1,0 +1,28 @@
+@import url("./layout.css");
+@import url("./global.css");
+
+
+.imgContainer
+{
+    height: 150px;
+    width: 100%;
+} 
+
+img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card
+{
+    transition: 0.2s;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 1px 1px 1px black;
+}

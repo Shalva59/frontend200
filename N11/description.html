@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>vdvsdvsdvsdvsdvsdvs</h1>
+
+    <script>
+
+        // const urlParams = new URLSearchParams(window.location.search);
+        // const myParam = urlParams.get("product");
+        // const product =JSON.parse(decodeURIComponent(myParam));
+        // console.log(product);
+        
+        const testProduct = localStorage.getItem("product");
+        const newData =JSON.parse(decodeURIComponent(testProduct));
+        console.log(newData);
+
+    </script>
+</body>
+
+</html>

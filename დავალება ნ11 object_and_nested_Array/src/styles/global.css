@@ -1,0 +1,27 @@
+.mb-50
+{
+    margin-bottom: 50px;
+}
+
+.mb-85
+{
+    margin-bottom: 85px;
+}
+
+.gap-15
+{
+    gap: 15px;
+}
+.flex
+{
+    display: flex;
+}
+.flex-wrap
+{
+    flex-wrap: wrap;
+}
+
+a
+{
+    text-decoration: none;
+}
