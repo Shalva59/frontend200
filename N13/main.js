@@ -17,6 +17,7 @@ async function getMovies(url) {
 }
 
 
+
 function showMovies(movies){
     main.innerHTML = ""
     movies.map((movie)=> {
