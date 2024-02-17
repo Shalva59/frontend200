@@ -1,0 +1,28 @@
+header {
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+}
+
+header h1
+{
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+ul
+{
+    list-style: none;
+}

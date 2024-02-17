@@ -1,0 +1,166 @@
+@import url("./layout.css");
+@import url("./global.css");
+@import url("./fonts.css");
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: rgb(215, 231, 211);
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card {
+    height: auto;
+    width: 300px;
+    background-color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    bottom: 20px;
+    overflow-y: hidden;
+    padding: 10px;
+    height: 155px;
+    padding: 16px;
+    background: rgb(255, 245, 245);
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 7%, rgb(61, 86, 196) 26%);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 5px;
+    padding-bottom: 30px;
+
+}
+
+.cardStyle {
+    padding: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.search
+{
+    margin-top: 15px;
+    border-radius: 30px;
+    height: 50px;
+    width: 220px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.search::placeholder
+{
+    color:white;
+}
+
+.search:focus
+{
+   outline: none;
+}
+
+
+/* Description Css */
+
+
+.secContainer
+{   
+    
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer
+{
+    height: auto;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
+     background-color:rgb(240, 240, 240);
+     padding: 10px;
+     gap: 5px !important;
+     border-radius:5px;
+}
+
+.generalContainer
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bigContainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.imgContainer{
+    height: 100%;
+    width: 60%;
+}
+
+.descriptionContainer
+{
+    height: 100%;
+    width: 65%;
+   
+}
+
+.descriptionContainer h1
+{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.descriptionContainer p
+{
+    margin-bottom: 40px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.descriptionContainer ul 
+{
+    margin-right: 30px;
+    margin-top: -10px;
+}
+.descriptionContainer ul li
+{
+    margin-bottom: 15px;
+}
+
+.btn
+{
+    margin-left: 20px;
+}
+
