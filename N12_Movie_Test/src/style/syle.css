@@ -164,3 +164,16 @@ h3 {
     margin-left: 20px;
 }
 
+
+.buyticketForm
+{
+    padding: 20px;
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+}
+
+.top
+{
+    text-align:center;
+}
