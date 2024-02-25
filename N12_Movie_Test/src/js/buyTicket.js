@@ -98,7 +98,6 @@ payMoney.map((element) => {
         if(sum < 0)
         {
             sum = 0 ;
-
         }
         else
         {

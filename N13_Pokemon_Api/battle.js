@@ -1,44 +1,50 @@
-const poke_container = document.getElementById("poke_container");
-const startTeam = document.getElementById("startTeam");
-startTeam.style.display = "none";
+const id = new URLSearchParams(window.location.search).get("id");
 
-const pokemon_count = 30;
-let prokeArr = [];
+console.log(id);
 
-const getPokemons = async () => {
-    for (let i = 1; i <= pokemon_count; i++) {
-        await fetchPokemons(i);
-    }
-}
+const split_string = id.split(',');
+console.log(split_string);
+
+
+const poke_container = document.getElementById("poke_contianer");
 
 const colours = {
-    normal: '#A8A77A',
-    fire: '#EE8130',
-    water: '#6390F0',
-    electric: '#F7D02C',
-    grass: '#7AC74C',
-    ice: '#96D9D6',
-    fighting: '#C22E28',
-    poison: '#A33EA1',
-    ground: '#E2BF65',
-    flying: '#A98FF3',
-    psychic: '#F95587',
-    bug: '#A6B91A',
-    rock: '#B6A136',
-    ghost: '#735797',
-    dragon: '#6F35FC',
-    dark: '#705746',
-    steel: '#B7B7CE',
-    fairy: '#D685AD',
+    normal: "#A8A77A",
+    fire: "#EE8130",
+    water: "#6390F0",
+    electric: "#F7D02C",
+    grass: "#7AC74C",
+    ice: "#96D9D6",
+    fighting: "#C22E28",
+    poison: "#A33EA1",
+    ground: "#E2BF65",
+    flying: "#A98FF3",
+    psychic: "#F95587",
+    bug: "#A6B91A",
+    rock: "#B6A136",
+    ghost: "#735797",
+    dragon: "#6F35FC",
+    dark: "#705746",
+    steel: "#B7B7CE",
+    fairy: "#D685AD",
 };
 
-const main_types = Object.keys(colours); // ობიექტის Property მარცხენა მხარე გადაიყვანა მასივად
-console.log(main_types);
-
-const main_types_color = Object.values(colours); // ობიექტის value მარჯვენა მხარეს გადაიყვანს მასივად
-console.log(main_types_color);
+const main_types = Object.keys(colours);
 
 
+
+
+const fetchPokemons = async (id) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data);
+    createPokemonCard(data);
+}
+
+split_string.map((id) => {
+    fetchPokemons(id);
+});
 
 
 const createPokemonCard = (pokemon) => {
@@ -139,27 +145,3 @@ const createPokemonCard = (pokemon) => {
 
     poke_container.appendChild(pokemonEl);
 }
-
-
-const fetchPokemons = async (id) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    // console.log(data);
-    createPokemonCard(data);
-}
-
-getPokemons();
-
-
-
-
-//TODO: მარჯვენა კლიკით გავხსნათ მენიუ 1) აღწერა  2)პოკემონის არჩევა
-
-//TODO: 5 პოკემონი ავირჩიოთ მინიმუმ
-
-//TODO: როცა ავირჩევთ 5 პოკემონს გადავა სხვა გვერდზე 
-
-//TODO: შემდეგ გვერდძე გვაჩვენოს არჩეული პოკემონები და რანდომზე დაგენერირებული 5 პოკემონი
-
-//TODO: მასივი შევქმნათ სადაც id ებს შევინახავთ არჩეულ პოკემონებს

@@ -45,7 +45,7 @@ const createPokemonCard = (pokemon) => {
 
     const poke_types = pokemon.types.map((type) => type.type.name);
 
-    const type = main_types.find((type) => poke_types.indexOf(type) > -1);
+    const type = main_types.find((type) => poke_types.indexOf(type) > -1); // gaugebroba
     console.log(type);
 
     //console.log(poke_types);
@@ -56,7 +56,7 @@ const createPokemonCard = (pokemon) => {
     const id = pokemon.id.toString().padStart(3, "0");
 
     const pokemonInnerHtml =
-        `
+        ` 
     <div class="img-container">
         <img src="${pokemon.sprites.front_default}" alt="">
     </div>
