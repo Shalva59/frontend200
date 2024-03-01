@@ -1,6 +1,10 @@
 @import url("fonts.css");
 @import url("global.css");
 @import url("layout.css");
+@import url("description.css");
+@import url("shopPageStyle.css");
+@import url("responsive.css");
+@import url("searchProduct.css");
 
 *
 {
@@ -15,6 +19,7 @@ li
 
 a
 {
+    
     text-decoration: none;
 }
 
@@ -45,7 +50,24 @@ img
 
 .navPanel
 {
+    color: black;
     gap: 40px;
+    margin-top: 10px;
+}
+
+.navigation a
+{
+    color: black;
+}
+
+.navigation a:hover
+{
+    color: rgb(198, 144, 29);
+}
+
+.burgerBar
+{
+    opacity: 0;
 }
 
 .helper_buttons
@@ -86,7 +108,21 @@ img
     justify-content: center;
     margin-top: 50px;
 }
+.carousel-control-prev{
+    /* background-color:aqua; */
+}
+.carousel-control-next
+{
+    /* background-color:aqua; */
+}
 
+.containerDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 1120px !important;
+}
 .slide img
 {
     width: 100%;
@@ -131,6 +167,17 @@ img
 
 /* card container */
 
+#fourCard
+{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fourCard img
+{
+    object-fit: cover;
+}
+
 .cardContainer
 {
     width: 300px;
@@ -140,5 +187,93 @@ img
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:10px;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
+.CardIMgContainer
+{
+    height: 170px;
+    width: 100%;
+}
+
+.CardTitle
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.CardTitle h2
+{
+    font-size: 15px;
+}
+.cardContainer:hover
+{
+    border-radius: 10px;
+}
+
+.cardContainer img 
+{
+    border-radius:10px
+}
+
+.cardContainer:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footerSec
+{
+    height: 70px;
+    background-color:rgb(238, 233, 226);
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.footerSec .footerNav
+{
+    margin-top: 10px;
+}
+
+
+/* contact */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .cont
+  {
+    text-align: center;
+  }
+
+  .contactContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }

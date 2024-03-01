@@ -1,9 +1,13 @@
 .container
 {
-    width: 1310px;
+    max-width: 1310px;
     
 }
 
+.gap-15
+{
+    gap: 15px;
+}
 .gap-20
 {
     gap: 20px;
